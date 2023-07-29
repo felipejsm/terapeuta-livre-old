@@ -11,7 +11,7 @@
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:terapeuta-livre:12344;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MYSQL
+    url: jdbc:h2:file:./target/h2db/testdb/terapeuta-livre;DB_CLOSE_DELAY=-1;MODE=MYSQL
     username: terapeuta-livre
     password:
     hikari:

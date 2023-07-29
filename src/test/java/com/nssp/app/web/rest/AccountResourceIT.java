@@ -14,7 +14,6 @@ import com.nssp.app.security.AuthoritiesConstants;
 import com.nssp.app.service.UserService;
 import com.nssp.app.service.dto.AdminUserDTO;
 import com.nssp.app.service.dto.PasswordChangeDTO;
-import com.nssp.app.service.dto.UserDTO;
 import com.nssp.app.web.rest.vm.KeyAndPasswordVM;
 import com.nssp.app.web.rest.vm.ManagedUserVM;
 import java.time.Instant;

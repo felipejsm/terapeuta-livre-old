@@ -32,7 +32,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:terapeuta-livre;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MYSQL
+    url: jdbc:h2:file:./target/h2db/db/terapeuta-livre;DB_CLOSE_DELAY=-1;MODE=MYSQL
     username: terapeuta-livre
     password:
     hikari:
@@ -65,13 +65,6 @@ server:
 # ===================================================================
 
 jhipster:
-  cache: # Cache configuration
-    redis: # Redis configuration
-      expiration: 3600 # By default objects stay 1 hour (in seconds) in the cache
-      server: redis://localhost:6379
-      cluster: false
-      # server: redis://localhost:6379,redis://localhost:16379,redis://localhost:26379
-      # cluster: true
   # CORS is only enabled by default with the "dev" profile
   cors:
     # Allow Ionic for JHipster by default (* no longer allowed in Spring Boot 2.4+)
@@ -87,7 +80,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: N2Y3MjkxY2M0MDg4NDk2NDE5MmMzNGRhZTMxM2U0ODE1YWJiY2U0MTkyNWU3YzM2MTFkMzkwZWFjMGQyZTgzNTFkY2I3NGMyNWQ1ZjRjYWI4N2RjMjljMjUwYWZjYmVmZTAxY2MwZjBhNjg4YTRhNmE5YWE1YTg3OGFjNTc2MDM=
+        base64-secret: ZjUyMDcyNThiYWRjMTY4NDQ4ZjBhOWMyMzc4NDQyMzBiMDU2OGYzZGM5YjNiNTg4MTM0YzFiZGFiYjllYWQ1ZTZiNTcxMzc4MjQwMDg3NzkxYTZmYTEyOWM4NmU2YzlmMWQwYmFkOWRlMGRlZjNmYjU2NjkyN2Q4YjdiM2I2ZWY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

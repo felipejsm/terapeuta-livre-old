@@ -92,13 +92,6 @@ jhipster:
   http:
     cache: # Used by the CachingHttpHeadersFilter
       timeToLiveInDays: 1461
-  cache: # Cache configuration
-    redis: # Redis configuration
-      expiration: 3600 # By default objects stay 1 hour (in seconds) in the cache
-      server: redis://localhost:6379
-      cluster: false
-      # server: redis://localhost:6379,redis://localhost:16379,redis://localhost:26379
-      # cluster: true
   security:
     authentication:
       jwt:
@@ -107,7 +100,7 @@ jhipster:
         # - In the Consul configserver
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: N2Y3MjkxY2M0MDg4NDk2NDE5MmMzNGRhZTMxM2U0ODE1YWJiY2U0MTkyNWU3YzM2MTFkMzkwZWFjMGQyZTgzNTFkY2I3NGMyNWQ1ZjRjYWI4N2RjMjljMjUwYWZjYmVmZTAxY2MwZjBhNjg4YTRhNmE5YWE1YTg3OGFjNTc2MDM=
+        base64-secret: ZjUyMDcyNThiYWRjMTY4NDQ4ZjBhOWMyMzc4NDQyMzBiMDU2OGYzZGM5YjNiNTg4MTM0YzFiZGFiYjllYWQ1ZTZiNTcxMzc4MjQwMDg3NzkxYTZmYTEyOWM4NmU2YzlmMWQwYmFkOWRlMGRlZjNmYjU2NjkyN2Q4YjdiM2I2ZWY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

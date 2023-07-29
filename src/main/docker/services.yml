@@ -5,7 +5,3 @@ services:
     extends:
       file: ./mysql.yml
       service: mysql
-  redis:
-    extends:
-      file: ./redis.yml
-      service: redis

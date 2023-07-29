@@ -1,3 +1,2 @@
 org.springframework.test.context.ContextCustomizerFactory = com.nssp.app.config.\
-    SqlTestContainersSpringContextCustomizerFactory,com.nssp.app.config.\
-    RedisTestContainersSpringContextCustomizerFactory
+    SqlTestContainersSpringContextCustomizerFactory
